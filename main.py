@@ -208,14 +208,14 @@ class BanPlugin(Star):
         """
         help_text = (
             "【ban_plugin 插件命令帮助】\n"
-            "1. /ban @用户...：在当前群聊中禁用指定 QQ 用户（支持同时禁用多个用户，忽略对自己的 @）。\n"
-            "2. /ban-all @用户...：全局禁用指定 QQ 用户（支持同时禁用多个用户）。\n"
-            "3. /pass @用户...：解除当前群聊中对指定 QQ 用户的禁用（即使其全局禁用，仍可在本群使用）。\n"
-            "4. /pass-all @用户...：解除全局及所有群聊中对指定 QQ 用户的禁用。\n"
-            "5. /ban_enable：启用禁用功能。\n"
-            "6. /ban_disable：禁用禁用功能。\n"
+            "1. /ban @xxx：在当前群聊中禁用指定QQ用户（支持同时禁用多个用户）\n"
+            "2. /ban-all @xxx：全局禁用指定 QQ用户（支持同时禁用多个用户）\n"
+            "3. /pass @xxx：解除当前群聊中对指定QQ用户的禁用（即使其全局禁用，仍可在本群使用）\n"
+            "4. /pass-all @xxx：解除全局及所有群聊中对指定 QQ 用户的禁用\n"
+            "5. /ban_enable：启用禁用功能\n"
+            "6. /ban_disable：禁用禁用功能\n"
             "7. /banlist：列出当前禁用的用户（包括本群及全局）。\n"
-            "8. /ban-help：显示此帮助信息。"
+            "8. /ban-help：显示此帮助信息"
         )
         yield event.plain_result(help_text)
 
