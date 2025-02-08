@@ -3,7 +3,7 @@ from astrbot.api.star import Context, Star, register
 from astrbot.api import sp
 from astrbot.api.message_components import At
 
-@register("ban_plugin", "水蜜桃", "用于禁用指定 QQ 用户在群聊或全局范围内使用机器人功能的插件，ban-help获取帮助", "1.2.0")
+@register("ban_plugin", "水蜜桃", "黑名单插件，用于禁用指定 QQ 用户在群聊或全局范围内使用机器人功能的插件，ban-help获取帮助", "1.2.0")
 class BanPlugin(Star):
     def __init__(self, context: Context, config: dict):
         super().__init__(context)
