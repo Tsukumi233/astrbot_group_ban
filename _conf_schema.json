@@ -1,12 +1,20 @@
 {
     "ban_config": {
-        "description": "禁用插件配置",
+        "description": "群聊黑名单插件配置",
         "type": "object",
         "items": {
             "enable": {
-                "description": "是否启用禁用功能",
+                "description": "是否启用群聊黑名单功能",
                 "type": "bool",
                 "default": true
+            },
+            "banned_groups": {
+                "description": "被屏蔽的群聊列表",
+                "type": "list",
+                "items": {
+                    "type": "string"
+                },
+                "default": []
             }
         }
     }
